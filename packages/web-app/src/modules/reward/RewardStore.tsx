@@ -109,7 +109,7 @@ export class RewardStore {
   ) {}
 
   fetchReward = flow(
-    function* (this: RewardStore, rewardId?: string) {
+    function* (this: RewardStore, rewardId: string | null) {
       console.log('Loading reward ' + rewardId)
 
       try {
